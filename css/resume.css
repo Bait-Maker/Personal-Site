@@ -1,0 +1,127 @@
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 400px auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.title {
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-img {
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 300 to 800 */
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+h3 {
+    color: white;
+    background-color: #27384c;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* start about  */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.about p {
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+.contact {
+    align-self: flex-start;
+    padding: 0;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-img {
+    margin-right: 5px;
+}
+
+.contact-list li {
+    margin-bottom: 5px;
+}
+
+/* start experience  */
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+
+/* start language */
+.language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.language-list {
+    align-self: flex-start;
+}
+
+
+/* start education */
+.education {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* start skills */
+.skills {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: auto auto;
+}
+
+.skill-title {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* end skills  */
